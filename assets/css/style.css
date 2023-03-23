@@ -1561,3 +1561,11 @@ textarea.form-input::-webkit-resizer { display: none; }
   font-family: Vazir, serif;
 }
 
+@font-face {
+  font-family: Roboto;
+  src: url(../fonts/RobotoSlab.ttf);
+}
+
+.font-roboto{
+  font-family: Roboto;
+}
