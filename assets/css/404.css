@@ -1,0 +1,24 @@
+body{
+  margin-top: 30px;
+  text-align: center;
+}
+
+p{
+  margin: 20px;
+}
+
+a{
+  display: inline-block;
+}
+
+button{
+  display: inline-block;
+	background-color: rgb(220, 231, 21);
+	border-radius: 5px;
+	font-size: 15px;
+	padding: 5px;
+	padding-left: 15px;
+	padding-right: 15px;
+	font-family: Vazir;
+	border: 2px solid #e1ff79;
+}
