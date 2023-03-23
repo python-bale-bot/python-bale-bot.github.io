@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="refresh" content="0; URL=https://python-bale-bot.readthedocs.io/en/master/" />
+    <link rel="icon" href="assets/images/bale.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="apple-touch-icon" href="https://python-bale-bot.ir/assets/images/bale.png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Redirecting</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/python-bale-bot.css" />
+    <link rel="stylesheet" href="assets/css/animation.css" />
+</head>
+
+<body>
+    <div id="redirect" style="text-align: center;margin-top: 50px;color: #05ffe4;font-size: 20px;">
+        <p class="font-lalezar">This page moved soon...</p>
+    </div>
+
+    <div id="not-redirect" style="display: none;text-align: center;margin-top: 50px;font-size: 20px;color: #ff1361">
+        <p class="font-lalezar">You have not yet been redirected to the desired page, click <a style="display: inline-block" href="https://python-bale-bot.readthedocs.io/en/master/">here</a> to be redirected..</p>
+    </div>
+
+    <script>
+        setInterval(function(){
+            const redirect = document.getElementById("redirect");
+            redirect.style.display = "none";
+            const not_redirect = document.getElementById("not-redirect");
+            not_redirect.style.display = "block";
+        }, 5000)
+    </script>
+
+</body>
+</html>
