@@ -1,9 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
+<html lang="fa">
+    
+    <head>
     <meta charset="utf-8" />
     <link rel="icon" href="assets/images/bale.png" />
+    <link rel="apple-touch-icon" href="https://python-bale-bot.ir/assets/images/bale.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes" />
     <meta name="theme-color" content="#000000" />
     <meta name="description" content="An API wrapper for Bale written in Python." />
@@ -15,30 +16,47 @@
     <meta name="twitter:title" content="python-bale-bot">
     <meta name="twitter:description" content="An API wrapper for Bale written in Python.">
     <meta name="twitter:image" content="https://python-bale-bot.ir/assets/images/bale.png">
-    <link rel="apple-touch-icon" href="https://python-bale-bot.ir/assets/images/bale.png" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <title>python-bale-bot: A project by Kian Ahmadian</title>
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <link rel="stylesheet" href="assets/css/python-bale-bot.css" />
+    <link rel="stylesheet" href="assets/css/fa.css" />
+    <link rel="stylesheet" href="assets/css/code.css" />
     <link rel="stylesheet" href="assets/css/animation.css" />
     <link rel="canonical" href="https://python-bale-bot.ir">
+    <title>python-bale-bot</title>
 </head>
 
 <body>
-    <div style="text-align: center; align-items: center;font-size: 20px;color: #05ffe4;border-color: brown" border="1">
+    <div style="text-align: center; align-items: center;color: #05ffe4;" dir="rtl">
         <img style="display: block;margin-left: auto;margin-right: auto;width: 150px;" src="assets/images/bale.png" alt="python-bale-bot"> 
-        <h1 id="title" style="font-weight: bold;" class="font-roboto animation-title">python-bale-bot</h1>
+        <h1 id="title" style="font-weight: bold;" class="animation-title">python-bale-bot</h1>
         <br/>
-        <h2 id="short-description" class="font-vazir">The best Python package for <a style="text-decoration: none;" target="_blank" href="https://bale.ai">Bale</a> messenger</h2>
+        <h2 id="short-description" dir="rtl">برترین پکیج پایتون برای برنامه نویسی در <a style="text-decoration: none;" target="_blank" href="https://bale.ai">بله</a></h2>
         <br/>
-    </div>
+        <div>
+            <button disabled onclick="openAddress('donate')" class="v2-button"><i class="fa fa-money"></i> حمایت مالی</button>
+            <button onclick="openAddress('github')" class="v2-button"><i class="fa fa-github"></i> گیت هاب</button>
+            <button onclick="openAddress('documention')" class="v2-button"><i class="fa fa-map-o"></i> داکیومنت</button>
+            <div class="developers">
+                <button class="v2-button"><i class="fa fa-code"></i> توسعه دهندگان</button>
+                <div id="developers-p">
+                  <p class="link" onclick="openAddress('dev-kian-ahmadian')">کیان احمدیان</p>
+                  <p class="link" onclick="openAddress('dev-amin-shahrabi')">امین شهرابی</p>
+                  <p class="link" onclick="openAddress('dev-kasra-gamasaee')">کسری گماسایی</p>
+                </div>
+              </div>
+        </div>
+        <br/> 
+        <h3 id="lang-description">در این روز ها بیشتر افراد به دلیل عوامل مختلف از پیام رسان های داخلی استفاده میکنند. <p onclick="openAddress('bale')" class="link">بله</p> یکی از پیام رسان هایی است که توانسته با توجه به امکانات مختلف آن (پرداخت، ساخت و برنامه نویسی بازو و ...) کاربران و برنامه نویسان را به سمت خود بکشاند. حال ما برای راحتی برنامه نویسان، کتابخانه ای سریع، مدرن و امن به وجود آورده ایم</h3>
+        <br/>
+        <pre dir="ltr"><code class="python hljs language-python"><span class="hljs-keyword">from</span> bale <span class="hljs-keyword">import</span> <span class="hljs-params">Bot, Message</span>
+<span class="hljs-params">bot</span> <span class="hljs-meta">=</span> <span class="hljs-params">Bot</span>(<span class="hljs-string">"YOUR TOKEN"</span>)
 
-    <div style="display: block"><a target="_blank" href="https://github.com/python-bale-bot/python-bale-bot"><button class="social-btn"><i class="fa fa-github"></i> GitHub</button></a> <a target="_blank" href="https://python-bale-bot.readthedocs.io/en/master/"><button class="social-btn"><i class="fa fa-map-o"></i> Documentation</button></a> <a target="_blank" href="https://kian-ahmadian.ir/donate"><button disabled class="social-btn">Donate</button></a></div>
-    <br/>
-    <div id="description" style="text-align: left;margin-right: 20px;margin-left: 20px"><h2 style="color: rgba(61,255,10,0.84);" class="font-vazir">
-        In these days when external messengers cannot be used easily, many people enter internal messengers and use it, and many programmers also enter this messenger for this reason. One of these internal messengers is Bale, this messenger has very wide features.
-        Now, for your convenience, we have designed and programmed a modern, fast and also safe library for the bot programmers of this messenger.
-    </h2></div>
-    
+@bot<span class="hljs-meta">.</span>listen(<span class="hljs-string">"on_message"</span>)
+<span class="hljs-keyword">async</span> <span class="hljs-keyword">def</span> <span class="hljs-title function_">on_message</span>(<span class="hljs-params">message</span>: Message):
+    <span class="hljs-keyword">return</span> <span class="hljs-keyword">await</span> message<span class="hljs-meta">.</span>reply(<span class="hljs-string">"Hi"</span>) 
+
+bot<span class="hljs-meta">.</span>run()</code></pre>
+    </div>
+    <script src="assets/js/fa.js"></script>
 </body>
+
 </html>

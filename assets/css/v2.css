@@ -1,0 +1,179 @@
+body {
+	margin-top: 60px;
+	margin-bottom: 30px;
+    background-color: rgb(0 52 45);
+}
+
+#title {
+    font-family: Roboto;
+}
+
+#short-description, #lang-description {
+    font-family: Vazir;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+.link {
+	color: rgba(225, 255, 121, 0.58);
+	cursor: pointer;
+}
+
+.link:hover {
+	color: rgba(221, 231, 21, 0.785);
+}
+
+.social-btn{
+	display: inline-block;
+	background-color: rgb(220, 231, 21);
+	border-radius: 5px;
+	font-size: 15px;
+	padding: 5px;
+	padding-left: 15px;
+	padding-right: 15px;
+	font-family: Vazir;
+	border: 2px solid #e1ff79;
+}
+
+.social-btn:hover{
+	background-color: rgba(221, 231, 21, 0.785);
+}
+
+a{
+	color: rgba(225, 255, 121, 0.58);
+	display: inline-block;
+}
+
+a:hover{
+	color: #e1ff79;
+}
+
+p {
+	display: inline-block;
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/RobotoSlab.ttf);
+  }
+  
+.font-roboto{
+    font-family: Roboto;
+}
+
+
+@font-face {
+	font-family: Vazir;
+	src: url(../fonts/Vazirmatn-Bold.ttf);
+  }
+  
+.font-vazir {
+	font-family: Vazir, serif;
+}
+
+.v2-button {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding: 5px;
+	padding-left: 15px;
+	padding-right: 15px;
+	background-color: aqua;
+	border: 2px solid #e1ff79;
+	border-radius: 5px;
+	font-size: 17px;
+	font-family: Vazir;
+}
+
+.v2-button:hover {
+	background-color: rgb(128, 214, 214);
+	border-radius: 5px;
+	font-family: Vazir;
+	cursor: pointer;
+}
+  
+.developers {
+	position: relative;
+	display: inline-block;
+}
+  
+#developers-p {
+	display: none;
+	position: absolute;
+	background-color: #f1f1f1;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+	border-radius: 10px;
+	font-family: Vazir;
+}
+  
+#developers-p p {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+  
+#developers-p p:hover {background-color: rgb(128, 214, 214);border-radius: 5px;}
+.developers:hover #developers-p {display: block;}
+.developers:active #developers-p {display: block;}
+
+@media (width >= 600px) {
+	#title {
+		font-size: 60px;
+	}
+	#short-description {
+		font-size: 32.5px;
+	}
+	#lang-description {
+		font-size: 19px;
+	}
+	.v2-button {
+		font-size: 17px;
+	}
+}
+
+@media (width >= 500px) and (width < 600px){
+	#title {
+		font-size: 50px;
+	}
+	#short-description {
+		font-size: 26.5px;
+	}
+	#lang-description {
+		font-size: 15px;
+	}
+	.v2-button {
+		font-size: 17px;
+	}
+}
+
+@media (width >= 400px) and (width < 500px) {
+	#title {
+		font-size: 40px;
+	}
+	#short-description {
+		font-size: 21.5px;
+	}
+	#lang-description {
+		font-size: 12px;
+	}
+	.v2-button {
+		font-size: 15px;
+	}
+}
+
+@media (width >= 350px) and (width < 400px) {
+	#title {
+		font-size: 30px;
+	}
+	#short-description {
+		font-size: 16px;
+	}
+	#lang-description {
+		font-size: 10px;
+	}
+	.v2-button {
+		font-size: 11px;
+	}
+}
