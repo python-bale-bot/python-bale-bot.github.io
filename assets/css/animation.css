@@ -42,11 +42,39 @@ h1 {
   font-family: "Montserrat Medium";
   max-width: 40ch;
   text-align: center;
-  transform: scale(0.94);
   animation: scale 3s forwards cubic-bezier(0.5, 1, 0.89, 1);
 }
+
 @keyframes scale {
   100% {
     transform: scale(1);
+  }
+}
+
+.pop-anim {
+  animation: 1s anim-popoutin ease;
+}
+
+@keyframes anim-popoutin {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+
+.remove-anim {
+  animation: 1s remove-popoutput forwards;
+}
+
+@keyframes remove-popoutput {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
