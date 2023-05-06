@@ -26,10 +26,14 @@
 
 <body>
     <div style="text-align: center; align-items: center;color: #05ffe4;" dir="rtl">
-        <img style="display: block;margin-left: auto;margin-right: auto;width: 150px;" src="assets/images/bale.png" alt="python-bale-bot"> 
+        <div id="alert-box">
+            <p onclick="openAddress('bale-api-problems')">اطلاعیه تیم توسعه دهندگان بله بات مبنی بر مشکلات وب سرویس بله</p>
+            <button id="close-alert-box-btn"><i class="fa fa-close"></i></button>
+        </div>
+        <img id="bale-image" style="display: block;margin-left: auto;margin-right: auto;width: 150px;" src="assets/images/bale.png" alt="python-bale-bot"> 
         <h1 id="title" style="font-weight: bold;" class="animation-title">python-bale-bot</h1>
         <br/>
-        <h2 id="short-description" dir="rtl">برترین پکیج پایتون برای برنامه نویسی در <p onclick="openAddress('bale')" class="link">بله</p></h2>
+        <h2 class="pop-anim" id="short-description" dir="rtl">برترین پکیج پایتون برای برنامه نویسی در <p onclick="openAddress('bale')" class="link">بله</p></h2>
         <br/>
         <div>
             <button disabled onclick="openAddress('donate')" class="v2-button"><i class="fa fa-money"></i> حمایت مالی</button>
@@ -39,6 +43,7 @@
                 <button class="v2-button"><i class="fa fa-link"></i> سایر لینک ها</button>
                 <div id="developers-p">
                   <p class="link" onclick="openAddress('pypi')">پای پی (PyPi)</p>
+                  <p class="link" onclick="openAddress('bale-bot-developers')">صفحه توسعه دهندگان ربات بله</p>
                   <p class="link" onclick="openAddress('github-examples')">نمونه کد ها</p>
                 </div>
             </div>
@@ -62,6 +67,10 @@
     <span class="hljs-keyword">return</span> <span class="hljs-keyword">await</span> message<span class="hljs-meta">.</span>reply(<span class="hljs-string">"Hi"</span>) 
 
 bot<span class="hljs-meta">.</span>run()</code></pre>
+        <br/>
+        <footer>
+            <p>© تمامی حقوق برای کیان احمدیان (توسعه دهنده ارشد) محفوظ است</p>
+        </footer>
     </div>
     <script src="assets/js/v2.js"></script>
 </body>

@@ -1,7 +1,10 @@
 body {
-	margin-top: 60px;
-	margin-bottom: 30px;
     background-color: rgb(0 52 45);
+}
+
+#bale-image {
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 #title {
@@ -17,6 +20,7 @@ body {
 .link {
 	color: rgba(225, 255, 121, 0.58);
 	cursor: pointer;
+	text-decoration: none;
 }
 
 .link:hover {
@@ -118,6 +122,39 @@ p {
 .developers:hover #developers-p {display: block;}
 .developers:active #developers-p {display: block;}
 
+#alert-box {
+	top: 0;
+	position: sticky;
+	position: -webkit-sticky;
+	background-color: red;
+	padding-top: 10px;
+	padding-bottom: 5px;
+	border-radius: 0 0 5px 5px;
+}
+
+#alert-box p {
+	font-family: Vazir;
+	font-size: 20px;
+	color: black;
+	cursor: pointer;
+}
+
+#alert-box #close-alert-box-btn {
+	background: none;
+	border: none;
+	font-size: 25px;
+	cursor: pointer;
+	margin-top: 10px;
+}
+
+footer {
+	padding: 10px;
+}
+
+footer p {
+	font-family: Vazir;
+}
+
 @media (width >= 600px) {
 	#title {
 		font-size: 60px;
@@ -125,11 +162,17 @@ p {
 	#short-description {
 		font-size: 32.5px;
 	}
-	#lang-description {
+	#lang-description, footer p, #alert-box p {
 		font-size: 19px;
 	}
 	.v2-button {
 		font-size: 17px;
+	}
+
+	#alert-box #close-alert-box-btn {
+		float: left;
+		margin: 0;
+		margin-left: 10px;
 	}
 }
 
@@ -140,10 +183,10 @@ p {
 	#short-description {
 		font-size: 26.5px;
 	}
-	#lang-description {
+	#lang-description, footer p {
 		font-size: 15px;
 	}
-	.v2-button {
+	.v2-button, #alert-box p {
 		font-size: 17px;
 	}
 }
@@ -155,10 +198,10 @@ p {
 	#short-description {
 		font-size: 21.5px;
 	}
-	#lang-description {
+	#lang-description, footer p {
 		font-size: 14px;
 	}
-	.v2-button {
+	.v2-button, #alert-box p {
 		font-size: 15px;
 	}
 }
@@ -170,10 +213,10 @@ p {
 	#short-description {
 		font-size: 16px;
 	}
-	#lang-description {
+	#lang-description, footer p {
 		font-size: 13px;
 	}
-	.v2-button {
+	.v2-button, #alert-box p {
 		font-size: 14px;
 	}
 }
