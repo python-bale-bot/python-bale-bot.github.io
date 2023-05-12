@@ -204,6 +204,9 @@ footer p {
 	.v2-button, #alert-box p {
 		font-size: 15px;
 	}
+	#developers-p {
+		margin-top: 10px;
+	}
 }
 
 @media (width >= 350px) and (width < 400px) {
