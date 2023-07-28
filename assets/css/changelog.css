@@ -89,10 +89,29 @@ ul {
 .center { text-align: center; }
 
 .version {
+	padding: 3px 3px;
 	text-align: center;
 	font-size: 20px;
 	border-radius: 6px;
 	background-color: rgba(21, 245, 169, 0.73);
+}
+
+.version .stable {
+	padding: 1px;
+	border-radius: 6px;
+	background: #4ac00e;
+	display: inline-block;
+	color: #fdfcfc;
+	font-family: Vazir, serif;
+}
+
+.version .no-publish {
+	padding: 1px;
+	border-radius: 6px;
+	background: #62c8f3;
+	display: inline-block;
+	color: red;
+	font-family: Vazir, serif;
 }
 
 .version .btn-version {
