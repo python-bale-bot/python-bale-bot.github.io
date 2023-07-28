@@ -1,0 +1,146 @@
+body {
+	background-color: rgb(24, 246, 172);
+}
+
+@font-face {
+	font-family: Vazir;
+	src: url(../fonts/Vazirmatn-Bold.ttf);
+}
+  
+.font-vazir {
+	font-family: Vazir, serif;
+}
+
+#title {
+	font-family: Vazir, sans-serif;
+	text-align: center;
+	font-weight: bold;
+}
+
+.hint-box {
+	margin-top: 10px;
+	margin-right: 5px;
+	margin-left: 5px;
+	padding: 3px;
+	background-color: rgb(162, 158, 158);
+	border-radius: 5px;
+	font-family: Vazir, sans-serif;
+	text-align: center;
+}
+
+.hint-box a {
+	text-decoration: none;
+	color: rgb(65, 64, 64);
+}
+
+.hint-box a:hover { color: rgb(74, 192, 14); }
+
+code {
+	font-family: Roboto, serif;
+	padding: 2px;
+	background-color: #9a9999;
+	border-radius: 4px;
+	font-weight: bold;
+}
+
+.code-box {
+	text-align: left;
+	background-color: rgba(2, 134, 89, 0.73);
+	border-radius: 7px;
+	border: 1px solid #e1ff79;
+	padding: 5px;
+}
+
+.code-box button {
+	display: flex;
+}
+
+.code-box button i {
+	font-size: 20px;
+}
+
+ul {
+	overflow: auto;
+	white-space: nowrap;
+}
+
+.code-box code {
+	font-size: 16px;
+}
+
+.content-box {
+	margin-top: 10px;
+	margin-right: 5px;
+	margin-left: 5px;
+	padding: 3px;
+	border-radius: 3px;
+	font-family: Vazir, sans-serif;
+	background-color: rgba(15, 173, 120, 0.726);
+	text-align: right;
+}
+
+.content-box a {
+	text-decoration: none;
+	color: rgb(65, 64, 64);
+}
+
+.content-box a:hover { color: rgb(89, 255, 0); }
+
+.center { text-align: center; }
+
+.version {
+	text-align: center;
+	font-size: 20px;
+	border-radius: 6px;
+	background-color: rgba(21, 245, 169, 0.73);
+}
+
+.version .btn-version {
+	float: right;
+	margin-right: 3px;
+}
+
+.content-box button {
+	margin-top: 5px;
+	margin-bottom: 5px;
+	padding: 5px;
+	background-color: aqua;
+	border: 2px solid #e1ff79;
+	border-radius: 5px;
+	font-size: 15px;
+	font-family: Vazir, sans-serif;
+	text-align: center;
+}
+
+.content-box button:hover {
+	background-color: rgb(128, 214, 214);
+	border-radius: 5px;
+	font-family: Vazir, sans-serif;
+	cursor: pointer;
+}
+
+footer {
+	text-align: center;
+}
+
+footer p {
+	font-family: Vazir, serif;
+}
+
+@media (width <= 300px) {
+	#title {
+		font-size: 20px;
+	}
+}
+
+@media (width < 300px) and (width <= 500px) {
+	#title {
+		font-size: 22px;
+	}
+}
+
+@media (width > 500px) {
+	#title {
+		font-size: 40px;
+	}
+}
