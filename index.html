@@ -27,6 +27,10 @@
 
 <body>
     <div style="text-align: center; align-items: center;color: #05ffe4;" dir="rtl">
+        <div id="alert-box">
+            <p onclick="openAddress('changelog')">نسخه 2.4.7 منتشر شد!</p>
+            <button id="close-alert-box-btn"><i class="fa fa-close"></i></button>
+        </div>
         <img id="bale-image" style="display: block;margin-left: auto;margin-right: auto;width: 150px;" src="assets/images/bale.png" alt="python-bale-bot"> 
         <h1 id="title" style="font-weight: bold;" class="animation-title">python-bale-bot</h1>
         <br/>
@@ -36,8 +40,8 @@
             <button onclick="openAddress('github')" class="v2-button"><i class="fa fa-github"></i> گیت هاب</button>
             <button onclick="openAddress('documention')" class="v2-button"><i class="fa fa-map-o"></i> داکیومنت</button>
             <div class="developers">
-                <button class="v2-button"><i class="fa fa-link"></i> سایر لینک ها</button>
-                <div id="developers-p">
+                <button class="v2-button"><i class="fa fa-link"></i> لینک های مهم</button>
+                <div class="developers-p">
                     <p class="link" onclick="openAddress('changelog')">ورژن ها</p>
                     <p class="link" onclick="openAddress('pypi')">پای پی (PyPi)</p>
                     <p class="link" onclick="openAddress('bale-bot-developers')">صفحه توسعه دهندگان ربات بله</p>
@@ -46,7 +50,7 @@
             </div>
             <div class="developers">
                 <button class="v2-button"><i class="fa fa-code"></i> توسعه دهندگان</button>
-                <div id="developers-p">
+                <div class="developers-p">
                   <p class="link" onclick="openAddress('dev-kian-ahmadian')">کیان احمدیان</p>
                   <p class="link" onclick="openAddress('dev-amin-shahrabi')">امین شهرابی</p>
                   <p class="link" onclick="openAddress('dev-kasra-gamasaee')">کسری گماسایی</p>
@@ -54,13 +58,13 @@
             </div>
         </div>
         <br/> 
-        <h3 id="lang-description">در این روز ها بیشتر افراد به دلیل عوامل مختلف از پیام رسان های داخلی استفاده میکنند. <p onclick="openAddress('bale')" class="link">بله</p> یکی از پیام رسان هایی است که توانسته با توجه به امکانات مختلف آن (پرداخت، ساخت و برنامه نویسی بازو و ...) کاربران و برنامه نویسان را به سمت خود بکشاند. حال ما برای راحتی برنامه نویسان، کتابخانه ای سریع، مدرن و امن به وجود آورده ایم</h3>
+        <h3 class="lang-description">در این روز ها بیشتر افراد به دلیل عوامل مختلف از پیام رسان های داخلی استفاده میکنند. <p onclick="openAddress('bale')" class="link">بله</p> یکی از پیام رسان هایی است که توانسته با توجه به امکانات مختلف آن (پرداخت، ساخت و برنامه نویسی بازو و ...) کاربران و برنامه نویسان را به سمت خود بکشاند. حال ما برای راحتی برنامه نویسان، کتابخانه ای سریع، مدرن و امن به وجود آورده ایم</h3>
         <br/>
-        <h3 id="lang-description" style="color: #abfe06;">به راحتی با استفاده از دستور</h3>
+        <h3 class="lang-description" style="color: #abfe06;">به راحتی با استفاده از دستور</h3>
         <br/>
         <pre dir="ltr"><code class="python hljs language-python">pip <span class="hljs-keyword">install</span><span class="hljs-string"> python-bale-bot</span></code></pre>
         <br/>
-        <h3 id="lang-description" style="color: #abfe06;">کتابخانه را نصب کنید!</h3>
+        <h3 class="lang-description" style="color: #abfe06;">کتابخانه را نصب کنید!</h3>
         <br/>
         <pre dir="ltr"><code class="python hljs language-python"><span class="hljs-keyword">from</span> bale <span class="hljs-keyword">import</span> <span class="hljs-params">Bot, Message</span>
 <span class="hljs-params">bot</span> <span class="hljs-meta">=</span> <span class="hljs-params">Bot</span>(<span class="hljs-string">"YOUR TOKEN"</span>)
@@ -71,6 +75,7 @@
 
 bot<span class="hljs-meta">.</span>run()</code></pre>
         <br/>
+        <h3 class="lang-description" style="color: rgb(5,231,231);">برای دریافت مثال های بیشتر به <p onclick="openAddress('github-examples')" class="link">گیت هاب</p> مراجعه نمائید.</h3><br/>
         <footer>
             <p>© تمامی حقوق برای کتابخانه python-bale-bot محفوظ است</p>
         </footer>

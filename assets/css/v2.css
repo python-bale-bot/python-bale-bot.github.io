@@ -8,11 +8,11 @@ body {
 }
 
 #title {
-    font-family: Roboto;
+	font-family: Roboto, serif;
 }
 
-#short-description, #lang-description {
-    font-family: Vazir;
+#short-description, .lang-description {
+	font-family: Vazir, serif;
 	margin-right: 10px;
 	margin-left: 10px;
 }
@@ -32,10 +32,8 @@ body {
 	background-color: rgb(220, 231, 21);
 	border-radius: 5px;
 	font-size: 15px;
-	padding: 5px;
-	padding-left: 15px;
-	padding-right: 15px;
-	font-family: Vazir;
+	padding: 5px 15px;
+	font-family: Vazir, serif;
 	border: 2px solid #e1ff79;
 }
 
@@ -60,9 +58,9 @@ p {
     font-family: Roboto;
     src: url(../fonts/RobotoSlab.ttf);
   }
-  
+
 .font-roboto{
-    font-family: Roboto;
+	font-family: Roboto, serif;
 }
 
 
@@ -70,7 +68,7 @@ p {
 	font-family: Vazir;
 	src: url(../fonts/Vazirmatn-Bold.ttf);
   }
-  
+
 .font-vazir {
 	font-family: Vazir, serif;
 }
@@ -78,68 +76,67 @@ p {
 .v2-button {
 	margin-top: 5px;
 	margin-bottom: 5px;
-	padding: 5px;
-	padding-left: 15px;
-	padding-right: 15px;
+	padding: 5px 15px;
 	background-color: aqua;
 	border: 2px solid #e1ff79;
 	border-radius: 5px;
 	font-size: 17px;
-	font-family: Vazir;
+	font-family: Vazir, serif;
 }
 
 .v2-button:hover {
 	background-color: rgb(128, 214, 214);
 	border-radius: 5px;
-	font-family: Vazir;
+	font-family: Vazir, serif;
 	cursor: pointer;
 }
-  
+
 .developers {
 	position: relative;
 	display: inline-block;
 }
-  
-#developers-p {
+
+.developers-p {
 	display: none;
 	position: absolute;
 	background-color: #f1f1f1;
 	min-width: 160px;
-	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 	z-index: 1;
 	border-radius: 10px;
-	font-family: Vazir;
+	font-family: Vazir, serif;
 }
-  
+
 @media (width < 700px) {
-	#developers-p {
+	.developers-p {
 		margin-top: 30px;
 	}
 }
 
-#developers-p p {
+.developers-p p {
 	color: black;
 	padding: 12px 16px;
 	text-decoration: none;
 	display: block;
 }
-  
-#developers-p p:hover {background-color: rgb(128, 214, 214);border-radius: 5px;}
-.developers:hover #developers-p {display: block;}
-.developers:active #developers-p {display: block;}
+
+.developers-p p:hover {background-color: rgb(128, 214, 214);border-radius: 5px;}
+.developers-p .link:hover {color: rgba(252, 19, 19, 0.78);}
+.developers:hover .developers-p {display: block;}
+.developers:active .developers-p {display: block;}
 
 #alert-box {
 	top: 0;
 	position: sticky;
-	position: -webkit-sticky;
 	background-color: red;
 	padding-top: 10px;
 	padding-bottom: 5px;
 	border-radius: 0 0 5px 5px;
+	z-index: 20;
 }
 
 #alert-box p {
-	font-family: Vazir;
+	font-family: Vazir, serif;
 	font-size: 20px;
 	color: black;
 	cursor: pointer;
@@ -158,7 +155,7 @@ footer {
 }
 
 footer p {
-	font-family: Vazir;
+	font-family: Vazir, serif;
 }
 
 @media (width >= 600px) {
@@ -168,7 +165,7 @@ footer p {
 	#short-description {
 		font-size: 32.5px;
 	}
-	#lang-description, footer p, #alert-box p {
+	.lang-description, footer p, #alert-box p {
 		font-size: 19px;
 	}
 	.v2-button {
@@ -189,7 +186,7 @@ footer p {
 	#short-description {
 		font-size: 26.5px;
 	}
-	#lang-description, footer p {
+	.lang-description, footer p {
 		font-size: 15px;
 	}
 	.v2-button, #alert-box p {
@@ -204,13 +201,13 @@ footer p {
 	#short-description {
 		font-size: 21.5px;
 	}
-	#lang-description, footer p {
+	.lang-description, footer p {
 		font-size: 14px;
 	}
 	.v2-button, #alert-box p {
 		font-size: 15px;
 	}
-	#developers-p {
+	.developers-p {
 		margin-top: 10px;
 	}
 }
@@ -222,7 +219,7 @@ footer p {
 	#short-description {
 		font-size: 16px;
 	}
-	#lang-description, footer p {
+	.lang-description, footer p {
 		font-size: 13px;
 	}
 	.v2-button, #alert-box p {
