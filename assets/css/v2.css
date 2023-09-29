@@ -147,7 +147,9 @@ p {
 	border: none;
 	font-size: 25px;
 	cursor: pointer;
-	margin-top: 10px;
+	float: left;
+	margin: 0;
+	margin-left: 10px;
 }
 
 footer {
@@ -170,12 +172,6 @@ footer p {
 	}
 	.v2-button {
 		font-size: 17px;
-	}
-
-	#alert-box #close-alert-box-btn {
-		float: left;
-		margin: 0;
-		margin-left: 10px;
 	}
 }
 
