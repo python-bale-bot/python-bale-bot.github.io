@@ -81,10 +81,10 @@ ul {
 
 .content-box a {
 	text-decoration: none;
-	color: rgb(65, 64, 64);
+	color: rgb(48, 43, 24);
 }
 
-.content-box a:hover { color: rgb(89, 255, 0); }
+.content-box a:hover { opacity: 70%; }
 
 .center { text-align: center; }
 
@@ -162,4 +162,23 @@ footer p {
 	#title {
 		font-size: 40px;
 	}
+}
+
+::-webkit-scrollbar {
+	width: 7px;
+	height: 7px;
+	background-color: #4ac00e;
+	border-radius: 5px;
+}
+
+::-webkit-scrollbar-corner {
+	border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #62c8f3;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background-color: #407e99;
 }
