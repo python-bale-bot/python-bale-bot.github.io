@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,800;0,900;1,300;1,700;1,800;1,900&display=swap');
+
 body {
 	background-color: rgb(24, 246, 172);
 }
@@ -36,11 +38,12 @@ body {
 .hint-box a:hover { color: rgb(74, 192, 14); }
 
 code {
-	font-family: Roboto, serif;
+	font-family: Poppins, sans-serif;
 	padding: 2px;
 	background-color: #9a9999;
 	border-radius: 4px;
 	font-weight: bold;
+	font-size: 13px;
 }
 
 .code-box {
@@ -146,6 +149,12 @@ footer p {
 	font-family: Vazir, serif;
 }
 
+footer p b {
+	font-family: Poppins, sans-serif;
+	font-weight: bold;
+	font-size: 15px;
+}
+
 @media (width <= 300px) {
 	#title {
 		font-size: 20px;
@@ -167,7 +176,7 @@ footer p {
 ::-webkit-scrollbar {
 	width: 7px;
 	height: 7px;
-	background-color: #4ac00e;
+	background-color: transparent;
 	border-radius: 5px;
 }
 
@@ -176,7 +185,8 @@ footer p {
 }
 
 ::-webkit-scrollbar-thumb {
-	background-color: #62c8f3;
+	background-color: #2a2a30;
+	border-radius: 5px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
