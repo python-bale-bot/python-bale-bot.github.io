@@ -1,20 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,800;0,900;1,300;1,700;1,800;1,900&display=swap');
+
 body {
     background-color: rgb(0 52 45);
+}
+
+#wrapper {
+	text-align: center; 
+	align-items: center;
+	color: #05ffe4;
 }
 
 #bale-image {
 	margin-top: 20px;
 	margin-bottom: 20px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 150px;
 }
 
 #title {
 	font-family: Roboto, serif;
+	font-weight: bold;
 }
 
 #short-description, .lang-description {
 	font-family: Vazir, serif;
 	margin-right: 10px;
 	margin-left: 10px;
+}
+
+#more-info {
+	color: rgb(5,231,231);
+}
+
+.help-text {
+	color: #abfe06;
 }
 
 .link {
@@ -120,6 +141,12 @@ p {
 	display: block;
 }
 
+.gist {
+	margin-left: 20px;
+	margin-right: 20px;
+	border-radius: 7px;
+}
+
 .developers-p p:hover {background-color: rgb(128, 214, 214);border-radius: 5px;}
 .developers-p .link:hover {color: rgba(252, 19, 19, 0.78);}
 .developers:hover .developers-p {display: block;}
@@ -152,12 +179,21 @@ p {
 	margin-left: 10px;
 }
 
+.hidden {
+	display: none;
+}
+
 footer {
 	padding: 10px;
 }
 
 footer p {
 	font-family: Vazir, serif;
+}
+
+footer p b, code {
+	font-family: Poppins, sans-serif;
+	font-size: 15px;
 }
 
 @media (width >= 600px) {
@@ -167,7 +203,7 @@ footer p {
 	#short-description {
 		font-size: 32.5px;
 	}
-	.lang-description, footer p, #alert-box p {
+	.lang-description, footer p, footer p b, #alert-box p {
 		font-size: 19px;
 	}
 	.v2-button {
@@ -182,7 +218,7 @@ footer p {
 	#short-description {
 		font-size: 26.5px;
 	}
-	.lang-description, footer p {
+	.lang-description, footer p, footer p b {
 		font-size: 15px;
 	}
 	.v2-button, #alert-box p {
@@ -197,7 +233,7 @@ footer p {
 	#short-description {
 		font-size: 21.5px;
 	}
-	.lang-description, footer p {
+	.lang-description, footer p, footer p b {
 		font-size: 14px;
 	}
 	.v2-button, #alert-box p {
@@ -215,10 +251,30 @@ footer p {
 	#short-description {
 		font-size: 16px;
 	}
-	.lang-description, footer p {
+	.lang-description, footer p, footer p b, footer p b {
 		font-size: 13px;
 	}
 	.v2-button, #alert-box p {
 		font-size: 14px;
 	}
+}
+
+::-webkit-scrollbar {
+	width: 7px;
+	height: 7px;
+	background-color: transparent;
+	border-radius: 5px;
+}
+
+::-webkit-scrollbar-corner {
+	border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #2a2a30;
+	border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background-color: #407e99;
 }

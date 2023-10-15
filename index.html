@@ -26,13 +26,13 @@
 </head>
 
 <body>
-    <div style="text-align: center; align-items: center;color: #05ffe4;" dir="rtl">
-        <div id="alert-box">
-            <p onclick="openAddress('changelog')">نسخه 2.4.7.2 منتشر شد!</p>
+    <div id="wrapper" dir="rtl">
+        <div class="hidden" id="alert-box">
+            <p id="open-btn"></p>
             <button id="close-alert-box-btn"><i class="fa fa-close"></i></button>
         </div>
-        <img id="bale-image" style="display: block;margin-left: auto;margin-right: auto;width: 150px;" src="assets/images/bale.png" alt="python-bale-bot"> 
-        <h1 id="title" style="font-weight: bold;" class="animation-title">python-bale-bot</h1>
+        <img id="bale-image" src="assets/images/bale.png" alt="python-bale-bot"> 
+        <h1 id="title" class="animation-title">python-bale-bot</h1>
         <br/>
         <h2 class="pop-anim" id="short-description" dir="rtl">برترین پکیج پایتون برای برنامه نویسی در <p onclick="openAddress('bale')" class="link">بله</p></h2>
         <br/>
@@ -60,24 +60,17 @@
         <br/>
         <h3 class="lang-description">در این روز ها بیشتر افراد به دلیل عوامل مختلف از پیام رسان های داخلی استفاده میکنند. <p onclick="openAddress('bale')" class="link">بله</p> یکی از پیام رسان هایی است که توانسته با توجه به امکانات مختلف آن (پرداخت، ساخت و برنامه نویسی بازو و ...) کاربران و برنامه نویسان را به سمت خود بکشاند. حال ما برای راحتی برنامه نویسان، کتابخانه ای سریع، مدرن و امن به وجود آورده ایم</h3>
         <br/>
-        <h3 class="lang-description" style="color: #abfe06;">به راحتی با استفاده از دستور</h3>
+        <h3 class="lang-description help-text">به راحتی با استفاده از دستور</h3>
         <br/>
         <pre dir="ltr"><code class="python hljs language-python">pip <span class="hljs-keyword">install</span><span class="hljs-string"> python-bale-bot</span></code></pre>
         <br/>
-        <h3 class="lang-description" style="color: #abfe06;">کتابخانه را نصب کنید!</h3>
+        <h3 class="lang-description help-text">کتابخانه را نصب کنید!</h3>
         <br/>
-        <pre dir="ltr"><code class="python hljs language-python"><span class="hljs-keyword">from</span> bale <span class="hljs-keyword">import</span> <span class="hljs-params">Bot, Message</span>
-<span class="hljs-params">bot</span> <span class="hljs-meta">=</span> <span class="hljs-params">Bot</span>(<span class="hljs-string">"YOUR TOKEN"</span>)
-
-@bot<span class="hljs-meta">.</span>listen(<span class="hljs-string">"on_message"</span>)
-<span class="hljs-keyword">async</span> <span class="hljs-keyword">def</span> <span class="hljs-title function_">on_message</span>(<span class="hljs-params">message</span>: Message):
-    <span class="hljs-keyword">return</span> <span class="hljs-keyword">await</span> message<span class="hljs-meta">.</span>reply(<span class="hljs-string">"Hi"</span>) 
-
-bot<span class="hljs-meta">.</span>run()</code></pre>
+        <script src="https://gist.github.com/kian-ahmadian/d99baf7caba5766d68ba82ed5083873c.js"></script>
         <br/>
-        <h3 class="lang-description" style="color: rgb(5,231,231);">برای دریافت مثال های بیشتر به <p onclick="openAddress('github-examples')" class="link">گیت هاب</p> مراجعه نمائید.</h3><br/>
+        <h3 class="lang-description" id="more-info">برای دریافت مثال های بیشتر به <p onclick="openAddress('github-examples')" class="link">گیت هاب</p> مراجعه نمائید.</h3><br/>
         <footer>
-            <p>© تمامی حقوق برای کتابخانه python-bale-bot محفوظ است</p>
+            <p>© تمامی حقوق برای کتابخانه <b>python-bale-bot</b> محفوظ است</p>
         </footer>
     </div>
     <script src="assets/js/v2.js"></script>
