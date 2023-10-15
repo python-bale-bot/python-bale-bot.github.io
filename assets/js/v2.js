@@ -20,10 +20,10 @@ const words = [
 window.onload = async () => {
     document.getElementById("close-alert-box-btn").addEventListener("click", () => {
         document.getElementById("alert-box").classList.add("remove-anim"); 
-        setInterval(() => document.getElementById("alert-box").remove(), 500)
+        setTimeout(() => document.getElementById("alert-box").remove(), 500)
     })    
 
-    setInterval(async () => {
+    setTimeout(async () => {
         let versionName = await getStableVersion()
         // https://python-bale-bot.ir/changelog#v-2-4-8
 
