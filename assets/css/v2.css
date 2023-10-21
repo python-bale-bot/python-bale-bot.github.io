@@ -112,45 +112,11 @@ p {
 	cursor: pointer;
 }
 
-.developers {
-	position: relative;
-	display: inline-block;
-}
-
-.developers-p {
-	display: none;
-	position: absolute;
-	background-color: #f1f1f1;
-	min-width: 160px;
-	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
-	z-index: 1;
-	border-radius: 10px;
-	font-family: Vazir, serif;
-}
-
-@media (width < 700px) {
-	.developers-p {
-		margin-top: 30px;
-	}
-}
-
-.developers-p p {
-	color: black;
-	padding: 12px 16px;
-	text-decoration: none;
-	display: block;
-}
-
 .gist {
 	margin-left: 20px;
 	margin-right: 20px;
 	border-radius: 7px;
 }
-
-.developers-p p:hover {background-color: rgb(128, 214, 214);border-radius: 5px;}
-.developers-p .link:hover {color: rgba(252, 19, 19, 0.78);}
-.developers:hover .developers-p {display: block;}
-.developers:active .developers-p {display: block;}
 
 #alert-box {
 	top: 0;
@@ -238,9 +204,6 @@ footer p b, code {
 	}
 	.v2-button, #alert-box p {
 		font-size: 15px;
-	}
-	.developers-p {
-		margin-top: 10px;
 	}
 }
 

@@ -20,12 +20,32 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="assets/css/v2.css" />
     <link rel="stylesheet" href="assets/css/code.css" />
+    <link rel="stylesheet" href="assets/css/modal.css" />
     <link rel="stylesheet" href="assets/css/animation.css" />
     <link rel="canonical" href="https://python-bale-bot.ir">
     <title>python-bale-bot | پوششی برای وب سرویس های پیام رسان بله</title>
 </head>
 
 <body>
+    <div id="link-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-link-modal" class="close">&times;</span><br/>
+            <a target="_blank" href="/changelog"><button class="v2-button"><i class="fa fa-link"></i> ورژن ها</button></a>
+            <a target="_blank" href="https://pypi.org/p/python-bale-bot"><button class="v2-button"><i class="fa fa-link"></i> صفحه پای پی کتابخانه</button></a>
+            <a target="_blank" href="https://dev.bale.ai/api"><button class="v2-button"><i class="fa fa-link"></i> صفحه توسعه دهندگان ربات بله</button></a>
+            <a target="_blank" href="https://docs.python-bale-bot.ir/en/stable/examples.html"><button class="v2-button"><i class="fa fa-link"></i> نمونه کد ها</button></a>
+        </div>
+    </div>
+    
+    <div id="developers-modal" class="modal">
+        <div class="modal-content">
+            <span id="close-developers-modal" class="close">&times;</span><br/>
+            <a target="_blank" href="https://kian-ahmadian.ir"><button class="v2-button"><i class="fa fa-link"></i> کیان احمدیان</button></a>
+            <br/>
+            <a target="_blank" href="https://github.com/AminShahrabi"><button class="v2-button"><i class="fa fa-link"></i> امین شهرابی</button></a>
+      </div>
+    </div>
+
     <div id="wrapper" dir="rtl">
         <div class="hidden" id="alert-box">
             <p id="open-btn"></p>
@@ -37,25 +57,10 @@
         <h2 class="pop-anim" id="short-description" dir="rtl">برترین پکیج پایتون برای برنامه نویسی در <p onclick="openAddress('bale')" class="link">بله</p></h2>
         <br/>
         <div>
-            <button onclick="openAddress('github')" class="v2-button"><i class="fa fa-github"></i> گیت هاب</button>
-            <button onclick="openAddress('documention')" class="v2-button"><i class="fa fa-map-o"></i> داکیومنت</button>
-            <div class="developers">
-                <button class="v2-button"><i class="fa fa-link"></i> لینک های مهم</button>
-                <div class="developers-p">
-                    <p class="link" onclick="openAddress('changelog')">ورژن ها</p>
-                    <p class="link" onclick="openAddress('pypi')">پای پی (PyPi)</p>
-                    <p class="link" onclick="openAddress('bale-bot-developers')">صفحه توسعه دهندگان ربات بله</p>
-                    <p class="link" onclick="openAddress('github-examples')">نمونه کد ها</p>
-                </div>
-            </div>
-            <div class="developers">
-                <button class="v2-button"><i class="fa fa-code"></i> توسعه دهندگان</button>
-                <div class="developers-p">
-                  <p class="link" onclick="openAddress('dev-kian-ahmadian')">کیان احمدیان</p>
-                  <p class="link" onclick="openAddress('dev-amin-shahrabi')">امین شهرابی</p>
-                  <p class="link" onclick="openAddress('dev-kasra-gamasaee')">کسری گماسایی</p>
-                </div>
-            </div>
+            <a target="_blank" href="https://github.com/python-bale-bot/python-bale-bot"><button class="v2-button"><i class="fa fa-github"></i> گیت هاب</button></a>
+            <a target="_blank" href="https://docs.python-bale-bot.ir/"><button class="v2-button"><i class="fa fa-map-o"></i> داکیومنت</button></a>
+            <button id="open-link-modal" class="v2-button"><i class="fa fa-link"></i> لینک های مهم</button>
+            <button id="open-developers-modal" class="v2-button"><i class="fa fa-code"></i> توسعه دهندگان</button>
         </div>
         <br/>
         <h3 class="lang-description">در این روز ها بیشتر افراد به دلیل عوامل مختلف از پیام رسان های داخلی استفاده میکنند. <p onclick="openAddress('bale')" class="link">بله</p> یکی از پیام رسان هایی است که توانسته با توجه به امکانات مختلف آن (پرداخت، ساخت و برنامه نویسی بازو و ...) کاربران و برنامه نویسان را به سمت خود بکشاند. حال ما برای راحتی برنامه نویسان، کتابخانه ای سریع، مدرن و امن به وجود آورده ایم</h3>
@@ -74,6 +79,7 @@
         </footer>
     </div>
     <script src="assets/js/v2.js"></script>
+    <script src="assets/js/modal.js"></script>
 </body>
 
 </html>
