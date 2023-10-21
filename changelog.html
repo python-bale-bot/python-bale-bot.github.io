@@ -21,30 +21,34 @@
     <title>python-bale-bot ChangeLog | نسخه های کتابخانه</title>
 </head>
 <body>
+    <a href="/"><img id="bale-img" src="assets/images/bale.png"></a>
     <h1 id="title">نسخه های کتابخانه</h1>
     <div class="content-box" id="v-2-4-8">
-        <div class="version">2.4.8 - <div class="no-publish">منتشر نشده</div></div><br/>
+        <div class="version">2.4.8 - <div class="stable">آخرین ورژن رسمی</div></div><br/>
         <ul>
-            <li>ایونت جدید <a href="https://docs.python-bale-bot.ir/en/stable/api.html#bale.on_successful_payment"><code>on_successfull_payment</code></a> اضافه شد (<a href="https://github.com/python-bale-bot/python-bale-bot/blob/V2.4.8/examples/invoice.py">مشاهده مثال در گیت هاب</a>) </li>
+            <li>ایونت جدید <code>on_successfull_payment</code> به همراه کلاس <a href="https://docs.python-bale-bot.ir/en/stable/bale.payments.successfulpayment.html"><code>bale.SuccessfulPayment</code></a> اضافه شد (<a href="https://github.com/python-bale-bot/python-bale-bot/blob/V2.4.8/examples/invoice.py">مشاهده مثال در گیت هاب</a>) </li>
             <li>فرایند ارسال و آپلود فایل ها بهینه و راحت تر شد</li>
             <li>فرایند دریافت آپدیت  ها بهینه تر شد</li>
             <li>قابلیت لاگ زدن در بخش های مختلف کتابخانه اضافه شد</li>
-            <li>پارامتر <code>payload</code> به متد <a href="https://docs.python-bale-bot.ir/en/stable/api.html#bale.Bot.send_invoice">ارسال درخواست پول</a> اضافه شد</li>
-            <li>داکیومنت بهینه تر شد</li>
-            <li>فایل های <a href="https://github.com/python-bale-bot/python-bale-bot/blob/V2.4.8/examples">نمونه</a> بروز شدند</li>
+            <li>متد ارسال رسانه به صورت آلبومی اضافه شد (قابل استفاده تنها در کلاس <code>bale.HTTPClient</code>)</li>
+            <li>پارامتر <code>components</code> به متد های ارسال رسانه اضافه شد</li>
+            <li>پارامتر <code>payload</code> به متد <a href="https://docs.python-bale-bot.ir/en/stable/bale.bot.html#bale.Bot.send_invoice">ارسال درخواست پول</a> اضافه شد</li>
+            <li>بخش <a href="https://docs.python-bale-bot.ir/en/stable/helpers.html"><code>bale.helpers</code></a> برای کمک به توسعه دهندگان اضافه شد</li>
+            <li>فایل های <a href="https://github.com/python-bale-bot/python-bale-bot/blob/V2.4.8/examples">نمونه</a> بروز و به داکیومنت منتقل شدند</li>
+            <li>داکیومنت و سایت به روز و بهینه شدند</li>
             <li>کتابخانه بهینه تر شد</li>
         </ul>
         <hr/>
         <ul>
-            <li>مشکل متد <a href="https://docs.python-bale-bot.ir/en/stable/api.html#bale.Bot.send_document">ارسال داکیومنت</a> برطرف شد</li>
-            <li>مشکل متد <a href="https://docs.python-bale-bot.ir/en/stable/api.html#bale.Bot.forward_message">بازارسال پیام</a> برطرف شد</li>
+            <li>مشکل متد <a href="https://docs.python-bale-bot.ir/en/stable/bale.bot.html#bale.Bot.send_document">ارسال داکیومنت</a> برطرف شد</li>
+            <li>مشکل متد <a href="https://docs.python-bale-bot.ir/en/stable/bale.bot.html#bale.Bot.forward_message">بازارسال پیام</a> برطرف شد</li>
             <li>پارامتر آپدیتر اختصاصی در کلاس ربات حذف شد</li>
             <li>پارامتر <code>sleep_after_every_get_updates</code> در هنگام ران کردن کلاس ربات حذف شد</li>
             <li>کلاس <code>bale.EventType</code> حذف شد</li>
         </ul>
     </div>
     <div class="content-box" id="v-2-4-7-2">
-        <div class="version">2.4.7.2 - <div class="stable">آخرین ورژن رسمی</div></div><br/>
+        <div class="version">2.4.7.2</div><br/>
         <ul>
             <li>داکیومنت بهینه تر شد</li>
             <li>فایل های <a href="https://github.com/python-bale-bot/python-bale-bot/blob/V2.4.7.2/examples">نمونه</a> بروز شدند</li>
@@ -52,7 +56,7 @@
         <hr/>
         <ul>
             <li>پیش نیاز های پروژه بروز شدند</li>
-            <li>مشکل متد <a href="https://docs.python-bale-bot.ir/en/stable/api.html#bale.Bot.send_document">ارسال داکیومنت</a> برطرف شد</li>
+            <li>مشکل متد <a href="https://docs.python-bale-bot.ir/en/stable/bale.bot.html#bale.Bot.send_document">ارسال داکیومنت</a> برطرف شد</li>
         </ul>
     </div>
     <div class="content-box" id="v-2-4-7">
@@ -77,7 +81,7 @@
         <ul>
             <li>کامپوننت ها به بخش <a href="https://github.com/python-bale-bot/python-bale-bot/blob/V2.4.6/bale/ui">ui</a> منتقل شدند</li>
             <li>سیستم پشتیبانی از کامپوننت ها و فایل ها بهینه شد</li>
-            <li>امکان جدید <a href="https://docs.python-bale-bot.ir/en/stable/api.html#bale.Bot.send_audio">ارسال فایل صوتی</a> اضافه شد</li>
+            <li>امکان جدید <a href="https://docs.python-bale-bot.ir/en/stable/bale.bot.html#bale.Bot.send_audio">ارسال فایل صوتی</a> اضافه شد</li>
             <li>از این پس رکوئست ارور ها با کد ۴۰۰ پشتیبانی میشوند</li>
             <li>چند پراپرتی جدید به کلاس <code>Message</code> و <code>Components</code> اضافه شد (<a href="https://docs.python-bale-bot.ir/en/stable/api.html#bale.Message.attachment"><code>Message.attachment</code></a> و <a href="https://docs.python-bale-bot.ir/en/stable/api.html#bale.Components.menu_keyboards"><code>Components.menu_keyboards</code></a> و <a href="https://docs.python-bale-bot.ir/en/stable/api.html#bale.Components.inline_keyboards"><code>Components.inline_keyboards</code></a>)</li>
             <li>پشتیبانی کامل از سیستم محدودیت بله</li>
@@ -95,7 +99,7 @@
             <li>داکیومنت بهینه تر شد</li>
             <li>کلاس <code>Message</code> بهینه شد</li>
             <li>ایونت جدید <a href="https://docs.python-bale-bot.ir/en/stable/api.html#bale.on_edited_message">on_edited_message</a> اضافه شد</li>
-            <li>امکان جدید <a href="https://docs.python-bale-bot.ir/en/stable/api.html#bale.Bot.forward_message">بازارسال پیام</a> ، <a href="https://docs.python-bale-bot.ir/en/stable/api.html#bale.Bot.ban_chat_member">بن کاربر چت</a> و <a href="https://docs.python-bale-bot.ir/en/stable/api.html#bale.Bot.send_video">ارسال فایل ویدیویی</a> اضافه شدند</li>
+            <li>امکان جدید <a href="https://docs.python-bale-bot.ir/en/stable/bale.bot.html#bale.Bot.forward_message">بازارسال پیام</a> ، <a href="https://docs.python-bale-bot.ir/en/stable/bale.bot.html#bale.Bot.ban_chat_member">بن کاربر چت</a> و <a href="https://docs.python-bale-bot.ir/en/stable/bale.bot.html#bale.Bot.send_video">ارسال فایل ویدیویی</a> اضافه شدند</li>
         </ul>
         <hr/>
         <ul>
@@ -108,7 +112,7 @@
         <ul>
             <li>کلاس <code>RateLimit</code> بهینه شد</li>
             <li>کلاس جدید <code>Updater</code> اضافه شد</li>
-            <li>امکان جدید <a href="https://docs.python-bale-bot.ir/en/stable/api.html#bale.Bot.send_location">ارسال موقعیت مکانی</a> و <a href="https://docs.python-bale-bot.ir/en/stable/api.html#bale.Bot.send_contact">ارسال مخاطب</a> اضافه شدند</li>
+            <li>امکان جدید <a href="https://docs.python-bale-bot.ir/en/stable/bale.bot.html#bale.Bot.send_location">ارسال موقعیت مکانی</a> و <a href="https://docs.python-bale-bot.ir/en/stable/bale.bot.html#bale.Bot.send_contact">ارسال مخاطب</a> اضافه شدند</li>
         </ul>
         <hr/>
         <ul>
@@ -119,7 +123,7 @@
         <div class="version">نسخه 2.4.3</div><br/>
         <ul>
             <li>کد ها بهینه تر و نام برخی عملگر ها تغییر داده شد</li>
-            <li>امکان جدید <a href="https://docs.python-bale-bot.ir/en/stable/api.html#bale.Bot.download_file">دریافت فایل</a> اضافه شد</li>
+            <li>امکان جدید <a href="https://docs.python-bale-bot.ir/en/stable/bale.bot.html#bale.Bot.download_file">دریافت فایل</a> اضافه شد</li>
             <li>داکیومنت بهینه تر شد</li>
             <li>مجوز های پروژه بروز شد</li>
         </ul>

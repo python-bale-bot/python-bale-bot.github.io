@@ -155,19 +155,19 @@ footer p b {
 	font-size: 15px;
 }
 
-@media (width <= 300px) {
+@media (width <= 350px) {
 	#title {
 		font-size: 20px;
 	}
 }
 
-@media (width < 300px) and (width <= 500px) {
+@media (width < 350px) and (width <= 450px) {
 	#title {
 		font-size: 22px;
 	}
 }
 
-@media (width > 500px) {
+@media (width > 450px) {
 	#title {
 		font-size: 40px;
 	}
@@ -191,4 +191,15 @@ footer p b {
 
 ::-webkit-scrollbar-thumb:hover {
 	background-color: #407e99;
+}
+
+#bale-img {
+	display: flex;
+	float: left;
+	width: 45px;
+	cursor: pointer;
+}
+
+#bale-img:hover {
+	opacity: 80%;
 }
