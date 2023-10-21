@@ -44,6 +44,10 @@ body {
 	text-decoration: none;
 }
 
+.link a {
+	text-decoration: none;
+}
+
 .link:hover {
 	color: rgba(221, 231, 21, 0.785);
 }
