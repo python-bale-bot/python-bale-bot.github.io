@@ -89,6 +89,15 @@ ul {
 
 .content-box a:hover { opacity: 70%; }
 
+.note {
+	text-align: center;
+	background-color: #9a9999;
+	margin-bottom: 5px;
+	border-radius: 5px;
+	border: 2px solid #e96762;
+	margin-top: -20px;
+}
+
 .center { text-align: center; }
 
 .version {
