@@ -108,22 +108,29 @@ ul {
 	background-color: rgba(21, 245, 169, 0.73);
 }
 
-.version .stable {
+.version::before {
+	content: "نسخه ";
+}
+
+.stable::after {
 	padding: 1px;
 	border-radius: 6px;
 	background: #4ac00e;
 	display: inline-block;
 	color: #fdfcfc;
 	font-family: Vazir, serif;
+	content: "آخرین ورژن رسمی";
+	align-content: center;
 }
 
-.version .no-publish {
+.no-publish::after {
 	padding: 1px;
 	border-radius: 6px;
 	background: #62c8f3;
 	display: inline-block;
 	color: red;
 	font-family: Vazir, serif;
+	content: "منتشر نشده";
 }
 
 .version .btn-version {
