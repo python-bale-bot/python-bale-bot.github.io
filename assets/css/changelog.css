@@ -65,6 +65,7 @@ code {
 ul {
 	overflow: auto;
 	white-space: nowrap;
+	list-style-type: disc;
 }
 
 .code-box code {
@@ -169,6 +170,12 @@ footer p b {
 	font-family: Poppins, sans-serif;
 	font-weight: bold;
 	font-size: 15px;
+}
+
+hr {
+	border: 2px solid green;
+	border-radius: 5px;
+	width: 50%;
 }
 
 @media (width <= 350px) {
