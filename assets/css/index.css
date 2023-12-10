@@ -211,7 +211,7 @@ footer p b, code {
 	}
 }
 
-@media (width >= 350px) and (width < 400px) {
+@media (width >= 0) and (width < 400px) {
 	#title {
 		font-size: 30px;
 	}
