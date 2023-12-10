@@ -68,6 +68,12 @@ ul {
 	list-style-type: disc;
 }
 
+li a::after {
+	content: url('data:image/svg+xml,<svg width="13" height="13" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke-width="1.5" stroke="%23607D8B" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" fill="none" d="M0 0h24v24H0z"/><path fill="black" d="M11 7h-5a2 2 0 0 0 -2 2v9a2 2 0 0 0 2 2h9a2 2 0 0 0 2 -2v-5" /><line fill="red" x1="10" y1="14" x2="20" y2="4" /><polyline fill="red" points="15 4 20 4 20 9" /></svg>');
+	margin: 0 0.15rem;
+	vertical-align: middle;
+}
+
 .code-box code {
 	font-size: 16px;
 }
@@ -198,7 +204,7 @@ hr {
 
 ::-webkit-scrollbar {
 	width: 7px;
-	height: 7px;
+	height: 3px;
 	background-color: transparent;
 	border-radius: 5px;
 }
