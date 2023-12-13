@@ -38,13 +38,9 @@ body {
 	color: #abfe06;
 }
 
-.link {
-	color: rgba(225, 255, 121, 0.58);
-	cursor: pointer;
-	text-decoration: none;
-}
-
 .link a {
+	color: inherit;
+	cursor: pointer;
 	text-decoration: none;
 }
 
@@ -66,8 +62,7 @@ body {
 	background-color: rgba(221, 231, 21, 0.785);
 }
 
-a{
-	color: rgba(225, 255, 121, 0.58);
+a {
 	display: inline-block;
 }
 
