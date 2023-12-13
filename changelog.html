@@ -21,20 +21,28 @@
     <title>python-bale-bot ChangeLog | نسخه های کتابخانه</title>
 </head>
 <body>
-    <a href="/"><img id="bale-img" src="assets/images/bale.png"></a>
+    <a href="/" target="_parent"><img id="bale-img" src="assets/images/bale.png"></a>
     <h1 id="title">نسخه های کتابخانه</h1>
     <div class="content-box" id="v-2-5-0">
         <div class="version no-publish">2.5.0 - </div><br/>
         <ul>
             <li>فایل <code>pyproject</code> به پروژه اضافه شد.</li>
+            <li>از این پس در صورت ویرایش پیام، پیام در <code>state</code> های موجود هم ویرایش خواهد شد.</li>
+            <li>پارامتر جدید <code>delay</code> به متد <a href="https://docs.python-bale-bot.ir/en/latest/bale.bot.html#bale.Bot.delete_message"><code>Bot.delete_message</code></a> اضافه شد. (با استفاده از این پارامتر امکان تعیین تاخیر در حذف پیام وجود دارد)</li>
+            <li>پارامتر جدید <code>delete_after</code> به متد های ارسال پیام و چند رسانه اضافه شد. (با استفاده از متد امکان تعیین مدت زمانی برای حذف پیام ارسال شده بعد از آن وجود دارد)</li>
         </ul>
         <hr/>
         <ul>
-            <li>مشکل دریافت خطای <code>ImportError</code> در هنگام نصب نسخه قبل برطرف شد.</li>
+            <li>مشکل برنگرداندن آبجکت پیام ویرایش شده برطرف شد.</li>
+            <li>مشکل دریافت خطای <code>ImportError</code> در هنگام نصب نسخه قبل برطرف شد. (این مشکل در ورژن های ۳.۹ به پایین پایتون به وجود آمده بود)</li>
+            <li>مشکل نمایش پیام ارور اشتباه در چک کننده های <code>components</code> برطرف شد.</li>
         </ul>
     </div>
     <div class="content-box" id="v-2-4-9">
         <div class="version stable">2.4.9 - </div><br/>
+        <div class="note">
+            <h3>در این ورژن مشکلاتی برای نصب کتابخانه در ورژن های ۳.۹ به پایین پایتون پیش آمد، که در ورژن های بعدی برطرف خواهد شد.</h3>
+        </div>
         <ul>
             <li>فرایند برخوردن به ارور در رکوئست ها بهینه و راحت تر شد</li>
             <li>بخش <code>state</code> اضافه شد (کش شدن اطلاعات چت، کاربران و ...)</li>

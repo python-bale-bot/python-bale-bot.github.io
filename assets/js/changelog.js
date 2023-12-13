@@ -15,7 +15,7 @@ window.onload = () => {
     const elements = document.getElementsByClassName("version")
     for (let element of elements) element.innerHTML = replaceWords(element.innerHTML);
     const a_elements = document.getElementsByTagName('a')
-    for (let element of a_elements) element.setAttribute('target', '_blank');
+    for (let element of a_elements) if (!element.getAttribute('target')) element.setAttribute('target', '_blank');
 }
 
 function replaceWords(element){
