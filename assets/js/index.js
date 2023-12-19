@@ -13,8 +13,17 @@ const words = [
 window.onload = async () => {
     document.getElementById("close-alert-box-btn").addEventListener("click", () => {
         document.getElementById("alert-box").classList.add("remove-anim"); 
-        setTimeout(() => document.getElementById("alert-box").remove(), 500)
+        setTimeout(() => document.getElementById("alert-box").classList.add('hidden'), 500)
     })    
+    const questions = document.querySelectorAll(".question");
+    for (const question of questions){
+        question.addEventListener("click", (event) => {
+            event.target.classList.toggle("active-faq");
+      
+            if (event.target.nextElementSibling.style.maxHeight == 0) event.target.nextElementSibling.style.maxHeight = event.target.nextElementSibling.scrollHeight + "px";
+            else event.target.nextElementSibling.style.maxHeight = "";
+        });
+     }
 
     setTimeout(async () => {
         let versionName = await getStableVersion()

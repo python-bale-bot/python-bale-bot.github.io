@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,400;0,800;0,900;1,300;1,700;1,800;1,900&display=swap');
 
 body {
-    background-color: rgb(0 52 45);
+    background-color: rgb(12 12 12);
 }
 
 #wrapper {
@@ -48,20 +48,6 @@ body {
 	color: rgba(221, 231, 21, 0.785);
 }
 
-.social-btn{
-	display: inline-block;
-	background-color: rgb(220, 231, 21);
-	border-radius: 5px;
-	font-size: 15px;
-	padding: 5px 15px;
-	font-family: Vazir, serif;
-	border: 2px solid #e1ff79;
-}
-
-.social-btn:hover{
-	background-color: rgba(221, 231, 21, 0.785);
-}
-
 a {
 	display: inline-block;
 }
@@ -74,6 +60,8 @@ p {
 	display: inline-block;
 }
 
+/* Fonts */
+
 @font-face {
     font-family: Roboto;
     src: url(../fonts/RobotoSlab.ttf);
@@ -82,7 +70,6 @@ p {
 .font-roboto{
 	font-family: Roboto, serif;
 }
-
 
 @font-face {
 	font-family: Vazir;
@@ -93,7 +80,10 @@ p {
 	font-family: Vazir, serif;
 }
 
-.v2-button {
+/* End fonts */
+/* Buttons */
+
+.button {
 	margin-top: 5px;
 	margin-bottom: 5px;
 	padding: 5px 15px;
@@ -104,18 +94,25 @@ p {
 	font-family: Vazir, serif;
 }
 
-.v2-button:hover {
+.button:hover {
 	background-color: rgb(128, 214, 214);
 	border-radius: 5px;
 	font-family: Vazir, serif;
 	cursor: pointer;
 }
 
+/* End buttons */
+/* Example code */
+
 .gist {
 	margin-left: 20px;
 	margin-right: 20px;
 	border-radius: 7px;
 }
+
+/* End example code */
+
+/* Alert box Section */
 
 #alert-box {
 	top: 0;
@@ -145,8 +142,62 @@ p {
 }
 
 .hidden {
-	display: none;
+	visibility: hidden;
 }
+
+/* End alert box section */
+
+/* Questions section */
+
+#questions h2 {
+	font-family: Vazir, sans-serif;
+	margin: 10px;
+}
+
+.faq {
+	margin-bottom: 20px;
+	position: relative;
+	padding: 5px;
+	padding-bottom: 0px;
+	border-radius: 7px;
+	border: 1.5px solid #52cdfd;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+.faq .question {
+	cursor: pointer;
+	font-size: 18px;
+	font-family: Vazir, sans-serif;
+	padding: 5px;
+}
+
+.faq .question::after {
+	content: "\2304";
+	margin-right: 10px;
+	display: inline-block;
+	position: absolute;
+	transform: translateY(-10px);
+	right: 0;
+	font-size: 20px;
+	transition: transform .5s ease;
+	color: #fdfdfd;
+}
+
+.faq .question .active-faq::after {
+	transform: translateY(0px) rotate(-180deg);
+}
+  
+.faq .answer {
+	max-height: 0;
+	transition: max-height .5s ease;
+	overflow: hidden;
+	line-height: 26px;
+	color: #666;
+}
+
+/* End questions section */
+/* Footer */
 
 footer {
 	padding: 10px;
@@ -161,6 +212,8 @@ footer p b, code {
 	font-size: 15px;
 }
 
+/* End footer */
+
 @media (width >= 600px) {
 	#title {
 		font-size: 60px;
@@ -168,10 +221,10 @@ footer p b, code {
 	#short-description {
 		font-size: 32.5px;
 	}
-	.lang-description, footer p, footer p b, #alert-box p {
+	.lang-description, .faq .question, footer p, footer p b, #alert-box p {
 		font-size: 19px;
 	}
-	.v2-button {
+	.button {
 		font-size: 17px;
 	}
 }
@@ -183,10 +236,10 @@ footer p b, code {
 	#short-description {
 		font-size: 26.5px;
 	}
-	.lang-description, footer p, footer p b {
+	.lang-description, .faq .question, footer p, footer p b {
 		font-size: 15px;
 	}
-	.v2-button, #alert-box p {
+	.button, #alert-box p {
 		font-size: 17px;
 	}
 }
@@ -198,10 +251,10 @@ footer p b, code {
 	#short-description {
 		font-size: 21.5px;
 	}
-	.lang-description, footer p, footer p b {
+	.lang-description, .faq .question, footer p, footer p b {
 		font-size: 14px;
 	}
-	.v2-button, #alert-box p {
+	.button, #alert-box p {
 		font-size: 15px;
 	}
 }
@@ -213,13 +266,15 @@ footer p b, code {
 	#short-description {
 		font-size: 16px;
 	}
-	.lang-description, footer p, footer p b, footer p b {
+	.lang-description, .faq .question, footer p, footer p b, footer p b {
 		font-size: 13px;
 	}
-	.v2-button, #alert-box p {
+	.button, #alert-box p {
 		font-size: 14px;
 	}
 }
+
+/* Scroll Bar */
 
 ::-webkit-scrollbar {
 	width: 7px;
@@ -240,3 +295,5 @@ footer p b, code {
 ::-webkit-scrollbar-thumb:hover {
 	background-color: #407e99;
 }
+
+/* End Scroll Bar */
