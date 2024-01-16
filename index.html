@@ -37,13 +37,6 @@
             <a target="_blank" href="https://ble.ir/@pbbbot"><button class="button"><i class="fa fa-link"></i> ربات کتابخانه</button></a>
         </div>
     </div>
-    
-    <div id="developers-modal" class="modal">
-        <div class="modal-content">
-            <span id="close-developers-modal" class="close">&times;</span><br/>
-            <a target="_blank" href="https://kian-ahmadian.ir"><button class="button"><i class="fa fa-link"></i> کیان احمدیان</button></a>
-      </div>
-    </div>
 
     <div id="wrapper" dir="rtl">
         <div class="hidden" id="alert-box">
@@ -53,7 +46,7 @@
         <img id="bale-image" src="assets/images/bale.png" alt="python-bale-bot"> 
         <h1 id="title" class="animation-title">python-bale-bot</h1>
         <br/>
-        <h2 class="pop-anim" id="short-description" dir="rtl">کامل ترین پکیج پایتون برای برنامه نویسی در <p class="link"><a target="_blank" href="https://bale.ai">بله</a></p></h2>
+        <h2 class="pop-anim" id="short-description" dir="rtl">کامل ترین پکیج پایتون برای برنامه نویسی در بله</h2>
         <br/>
         <div>
             <a class="pop-anim" target="_blank" href="https://github.com/python-bale-bot/python-bale-bot"><button class="button"><i class="fa fa-github"></i> گیت هاب</button></a>
@@ -62,7 +55,7 @@
             <a class="pop-anim" target="_blank" href="https://kian-ahmadian.ir"><button class="button"><i class="fa fa-code"></i> توسعه دهنده</button></a>
         </div>
         <br/>
-        <h3 class="lang-description">در این روز ها بیشتر افراد به دلیل عوامل مختلف از پیام رسان های داخلی استفاده میکنند. <p class="link"><a target="_blank" href="https://bale.ai">بله</a></p> یکی از پیام رسان هایی است که توانسته با توجه به امکانات مختلف آن (پرداخت، ساخت و برنامه نویسی بازو و ...) کاربران و برنامه نویسان را به سمت خود بکشاند. حال ما برای راحتی برنامه نویسان، کتابخانه ای سریع، مدرن و امن به وجود آورده ایم</h3>
+        <h3 class="lang-description">در این روز ها بیشتر افراد به دلیل عوامل مختلف از پیام رسان های داخلی استفاده میکنند. <a class="link" target="_blank" href="https://bale.ai">بله</a> یکی از پیام رسان هایی است که توانسته با توجه به امکانات مختلف آن (پرداخت، ساخت و برنامه نویسی بازو و ...) کاربران و برنامه نویسان را به سمت خود بکشاند. حال ما برای راحتی برنامه نویسان، کتابخانه ای سریع، مدرن و امن به وجود آورده ایم</h3>
         <br/>
         <div id="questions">
             <h2>سوالات متداول</h2>
@@ -73,32 +66,44 @@
                 <div class="answer">
                     <h3 class="lang-description help-text">به راحتی با استفاده از دستور</h3>
                     <br/>
-                    <pre dir="ltr"><code class="python hljs language-python">pip <span class="hljs-keyword">install</span><span class="hljs-string"> python-bale-bot</span></code></pre>
+                    <pre dir="ltr"><code class="python hljs language-python"><button id="copy-pip-command-button">کپی</button>pip <span class="hljs-keyword">install</span><span class="hljs-string"> python-bale-bot</span></code></pre>
                     <br/>
                     <h3 class="lang-description help-text">کتابخانه را نصب کنید!</h3>
                     <br/>
                     <script src="https://gist.github.com/kian-ahmadian/d99baf7caba5766d68ba82ed5083873c.js"></script>
                     <br/>
-                    <h3 class="lang-description" id="more-info">برای دریافت مثال های بیشتر به <p class="link"><a target="_blank" href="https://docs.python-bale-bot.ir/en/stable/examples.html">داکیومنت</a></p> مراجعه نمائید.</h3><br/>
+                    <h3 class="lang-description" id="more-info">برای دریافت مثال های بیشتر به <a class="link" target="_blank" href="https://docs.python-bale-bot.ir/en/stable/examples.html">داکیومنت</a> مراجعه نمائید.</h3><br/>
                 </div>
             </div>
             <div class="faq">
                 <div class="question">
-                    چطور کتابخانه را حمایت کنم؟
+                    چطور از کتابخانه حمایت کنم؟
                 </div>
                 <div class="answer">
-                    <p class="font-vazir lang-description">در حال حاضر امکان حمایت نقدی از ما وجود ندارد. لیکن تنها لازم است برای حمایت از ما پروژه را به دوستان خود معرفی و یا به پروژه استار 🌟 دهید</p>
+                    <p class="font-vazir lang-description white">در حال حاضر امکان حمایت نقدی از ما وجود ندارد. لیکن تنها لازم است برای حمایت از ما پروژه را به دوستان خود معرفی و یا به پروژه <a class="link" href="/github">استار 🌟</a> دهید</p><br></br>
+                </div>
+            </div>
+            <div class="faq">
+                <div class="question">
+                    چطور سوالات، انتقادات و پیشنهاد خود را به گوش توسعه دهندگان برسانم؟
+                </div>
+                <div class="answer">
+                    <p class="font-vazir lang-description white">
+                        بهترین راه ارتباطی برای طرح سوال، انتقاد و یا پیشنهاد <a class="link" href="/github">گیت هاب</a> مجموعه است.
+                    </p><br></br>
+                    
                 </div>
             </div>
         </div>
         <footer>
             <p>© تمامی حقوق برای کتابخانه <b>python-bale-bot</b> محفوظ است</p>
             <br>
-            <p dir="ltr"><b>1400-Present</b></p>
+            <p dir="ltr"><b>2022-Present</b></p>
         </footer>
     </div>
     <script src="assets/js/index.js"></script>
     <script src="assets/js/modal.js"></script>
+    <script src="assets/js/copybutton.js"></script>
 </body>
 
 </html>
