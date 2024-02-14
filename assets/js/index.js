@@ -26,6 +26,16 @@ window.onload = async () => {
         });
      }
 
+    await fetch('https://api.python-bale-bot.ir/api/countView', {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+            websiteAddress: "python-bale-bot"
+        })
+    })
+
     setTimeout(async () => {
         let versionName = await getStableVersion()
         // https://python-bale-bot.ir/changelog#v-2-4-8
