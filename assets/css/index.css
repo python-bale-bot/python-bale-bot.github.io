@@ -210,7 +210,7 @@ p {
 /* End questions section */
 /* Copy button */
 
-#copy-pip-command-button {
+.copy-pip-command-button {
 	padding: 5px;
 	font-family: Vazir, sans-serif;
 	font-size: 15px;
@@ -220,7 +220,7 @@ p {
 	border: none;
 }
 
-#copy-pip-command-button:disabled {
+.copy-pip-command-button:disabled {
 	cursor: not-allowed;
 }
 
